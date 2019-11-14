@@ -5,9 +5,11 @@ class PigLatinizer
   end 
   
   def piglatinize(text)
-    match = text.match(/[^aeiou]+/i)
+    match = text.match(/\A[^aeiou]+/i)
     initial_consonants = match ? match[0] : "" 
     body = text[initial_consonants.length..-1]  
+    suffic = match ? 'ay' : 'way'
+    body + initial_consonants + suffix 
     binding.pry 
   end 
   
