@@ -14,6 +14,7 @@ class PigLatinizer
     else 
       new_word = word.insert(length, letter)
       new_word.shift
+      (new_word << "ay").join
     end 
     binding.pry 
 
