@@ -9,9 +9,6 @@ class PigLatinizer
     letter = word.first 
     length = word.length 
     
-    if word.
-    
-    
     if word.first.match(/[aeiou]/i) 
       (word << "way").join 
     else 
