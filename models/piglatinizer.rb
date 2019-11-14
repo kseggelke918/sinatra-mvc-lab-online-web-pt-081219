@@ -11,7 +11,7 @@ class PigLatinizer
     
     if word.first.match(/[aeiou]/i) 
       (word << "way").join 
-    else 
+    elsif word.match(/[^aeiou]+/i)[0]
       binding.pry 
       prefix = word.match(/[^aeiou]+/i)[0]
     end 
