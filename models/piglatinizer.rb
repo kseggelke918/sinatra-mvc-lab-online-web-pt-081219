@@ -6,7 +6,8 @@ class PigLatinizer
   
   def piglatinize(text)
     word = text.split(" ")
-    if word
+    binding.pry 
+
   end 
   
   
