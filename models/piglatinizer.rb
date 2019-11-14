@@ -8,7 +8,7 @@ class PigLatinizer
     word = text.split("")
     binding.pry
     if word.first == /[aeiou]/
-      "#{word}way"
+      word << 
     else 
       "#{word}ay"
     end 
