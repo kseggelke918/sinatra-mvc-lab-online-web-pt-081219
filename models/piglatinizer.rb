@@ -12,6 +12,7 @@ class PigLatinizer
     if word.first == /[aeiou]/
       (word << "way").join 
     else 
+      word.insert(length, letter)
       "#{word}ay"
     end 
      
