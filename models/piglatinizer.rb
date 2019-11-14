@@ -12,8 +12,8 @@ class PigLatinizer
     if word.first == /[aeiou]/
       (word << "way").join 
     else 
-      word.insert(length, letter)
-      "#{word}ay"
+      new_word = word.insert(length, letter)
+      "#{new_word.shift}ay"
     end 
      
 
