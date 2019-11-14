@@ -10,7 +10,7 @@ class PigLatinizer
     body = text[initial_consonants.length..-1]  
     suffix = match ? 'ay' : 'way'
     body + initial_consonants + suffix 
-    binding.pry 
+ 
   end 
   
 
