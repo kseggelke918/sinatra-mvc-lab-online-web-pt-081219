@@ -16,7 +16,7 @@ class PigLatinizer
       new_word.shift
       (new_word << "ay").join
     end 
-    binding.pry 
+    # binding.pry 
 
   end 
   
