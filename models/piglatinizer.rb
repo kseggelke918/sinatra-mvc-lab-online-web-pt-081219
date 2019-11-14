@@ -6,6 +6,7 @@ class PigLatinizer
   
   def piglatinize(text)
     word = text.split(" ")
+    if word
   end 
   
   
