@@ -13,7 +13,7 @@ class PigLatinizer
       (word << "way").join 
     else 
       new_word = word.insert(length, letter)
-      "#{new_word.shift}ay"
+      new_word.shift
     end 
     binding.pry 
 
