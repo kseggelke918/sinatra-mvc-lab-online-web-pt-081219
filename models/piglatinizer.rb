@@ -10,14 +10,13 @@ class PigLatinizer
     length = word.length 
     
     if word.first == /[aeiou]/i
+      
       (word << "way").join 
     else 
       new_word = word.insert(length, letter)
       new_word.shift
       (new_word << "ay").join
     end 
-    # binding.pry 
-
   end 
   
   
