@@ -6,7 +6,7 @@ class Piglatinizer
   end 
   
   def convert_to_piglatin
-    
+    word = text.split(" ")
   end 
   
   
