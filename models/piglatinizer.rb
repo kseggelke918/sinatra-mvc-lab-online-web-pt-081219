@@ -9,7 +9,7 @@ class PigLatinizer
       
       match = word.match(/\A[^aeiou]+/i)
       initial_consonants = match ? match[0] : "" 
-      body = text[initial_consonants.length..-1]  
+      body = word[initial_consonants.length..-1]  
       suffix = match ? 'ay' : 'way'
       body + initial_consonants + suffix 
     end 
