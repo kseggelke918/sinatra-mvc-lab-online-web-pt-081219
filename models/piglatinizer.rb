@@ -9,15 +9,25 @@ class PigLatinizer
     letter = word.first 
     length = word.length 
     
+    if word.
+    
+    
     if word.first.match(/[aeiou]/i) 
       (word << "way").join 
     else 
-      new_word = word.insert(length, letter)
-      new_word.shift
-      (new_word << "ay").join
+      prefix = word.match(/[^aeiou]+/i)[0]
+      binding.pry 
     end 
   end 
   
-  
+
   
 end 
+
+  # prefix = word.match(/[^aeiou]+/i)[0]
+  # org[prefix.length, org.length-prefix.length} + prefix] + ay 
+
+
+      # new_word = word.insert(length, letter)
+      # new_word.shift
+      # (new_word << "ay").join
