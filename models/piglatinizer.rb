@@ -6,6 +6,8 @@ class PigLatinizer
   
   def piglatinize(text)
     word = text.split("")
+    letter = word.first 
+    length = word.length 
     binding.pry
     if word.first == /[aeiou]/
       (word << "way").join 
