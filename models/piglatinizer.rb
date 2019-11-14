@@ -5,7 +5,7 @@ class PigLatinizer
   end 
   
   def piglatinize(text)
-    word = text.match(/[^aeiou]/i)
+    word = text.match(/[^aeiou]+/i)
     binding.pry 
   end 
   
